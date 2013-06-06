@@ -43,25 +43,18 @@
           <envvar value="/usr/kde/git/share/man" name="MANDIR" />
           <envvar value="/usr/kde/git" name="PREFIX" />
         </envvars>
-        <topsourcedir></topsourcedir>
-        <cppflags></cppflags>
-        <ldflags></ldflags>
-        <ccompilerbinary></ccompilerbinary>
-        <cxxcompilerbinary></cxxcompilerbinary>
-        <f77compilerbinary></f77compilerbinary>
+        <topsourcedir/>
+        <cppflags/>
+        <ldflags/>
+        <ccompilerbinary/>
+        <cxxcompilerbinary/>
+        <f77compilerbinary/>
         <cflags/>
-        <f77flags></f77flags>
+        <f77flags/>
       </debug>
       <default>
-        <envvars>
-          <envvar value="i686-pc-linux-gnu" name="BUILD" />
-          <envvar value="/usr/kde/git/share" name="DATADIR" />
-          <envvar value="i686-pc-linux-gnu" name="HOST" />
-          <envvar value="/usr/kde/git/share/info" name="INFODIR" />
-          <envvar value="/usr/kde/git/share/man" name="MANDIR" />
-          <envvar value="/usr/kde/git" name="PREFIX" />
-        </envvars>
-        <configargs>--enable-debug=full --sysconfdir=/usr/kde/git/etc --with-gl --with-qt-dir=/usr/qt/3 --enable-mt --with-qt-libraries=/usr/qt/3/lib --without-arts</configargs>
+        <envvars/>
+        <configargs>--build=i686-pc-linux-gnu --host=i686-pc-linux-gnu --datadir=/usr/kde/git/share --infodir=/usr/kde/git/share/info --mandir=/usr/kde/git/share/man --prefix=/usr/kde/git --enable-debug=full --sysconfdir=/usr/kde/git/etc --with-gl --with-qt-dir=/usr/qt/3 --enable-mt --with-qt-libraries=/usr/qt/3/lib --without-arts</configargs>
         <builddir></builddir>
         <topsourcedir></topsourcedir>
         <cppflags></cppflags>
@@ -72,28 +65,28 @@
         <ccompilerbinary></ccompilerbinary>
         <cxxcompilerbinary></cxxcompilerbinary>
         <f77compilerbinary></f77compilerbinary>
-        <cflags>-O0 -ggdb3 -fno-omit-frame-pointer</cflags>
-        <cxxflags>-O0 -ggdb3 -fno-omit-frame-pointer</cxxflags>
+        <cflags>-O0 -ggdb3 -fno-omit-frame-pointer -Wall</cflags>
+        <cxxflags>-O0 -ggdb3 -fno-omit-frame-pointer -Wall</cxxflags>
         <f77flags></f77flags>
       </default>
     </configurations>
     <make>
       <envvars>
         <envvar value="1" name="WANT_AUTOCONF_2_5" />
-        <envvar value="1" name="WANT_AUTOMAKE_1_6" />
+        <envvar value="1" name="WANT_AUTOMAKE_1_11" />
       </envvars>
       <abortonerror>true</abortonerror>
       <runmultiplejobs>true</runmultiplejobs>
-      <numberofjobs>2</numberofjobs>
+      <numberofjobs>3</numberofjobs>
       <dontact>false</dontact>
-      <makebin>make</makebin>
+      <makebin>gmake</makebin>
       <prio>0</prio>
     </make>
     <run>
-      <mainprogram>/home/rainman/projects/kde/kdepim</mainprogram>
-      <programargs/>
-      <globaldebugarguments/>
-      <globalcwd>/home/rainman/projects/kde/kdepim</globalcwd>
+      <mainprogram>/home/rainman/projects/kde/kdepim_dev/kdepim</mainprogram>
+      <programargs></programargs>
+      <globaldebugarguments></globaldebugarguments>
+      <globalcwd>/home/rainman/projects/kde/kdepim_dev/kdepim</globalcwd>
       <useglobalprogram>true</useglobalprogram>
       <terminal>false</terminal>
       <autocompile>false</autocompile>
