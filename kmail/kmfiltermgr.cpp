@@ -99,7 +99,7 @@ int KMFilterMgr::processPop( KMMessage * msg ) const {
 }
 
 bool KMFilterMgr::beginFiltering(KMMsgBase *msgBase) const {
-    if (MessageProperty::filtering( msgBase )) {
+    if (MessageProperty::filtering( (Q_UINT32)msgBase )) {
         return false;
     }
     MessageProperty::setFiltering( msgBase, true );
