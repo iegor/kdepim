@@ -99,10 +99,14 @@ int KMFilterMgr::processPop( KMMessage * msg ) const {
 }
 
 bool KMFilterMgr::beginFiltering(KMMsgBase *msgBase) const {
-    if (MessageProperty::filtering( (Q_UINT32)msgBase )) {
+    if(!msgBase) {
         return false;
     }
-    MessageProperty::setFiltering( msgBase, true );
+
+    if (MessageProperty::filtering(msgBase->getMsgSerNum())) {
+        return false;
+    }
+    MessageProperty::setFiltering( msgBase->getMsgSerNum(), true );
     MessageProperty::setFilterFolder( msgBase, 0 );
     if ( FilterLog::instance()->isLogging() ) {
         FilterLog::instance()->addSeparator();
@@ -134,7 +138,7 @@ void KMFilterMgr::endFiltering(KMMsgBase *msgBase) const {
             parent->addMsgKeepUID( msg );
         }
     }
-    MessageProperty::setFiltering( msgBase, false );
+    MessageProperty::setFiltering( msgBase->getMsgSerNum(), false );
 }
 
 /**
@@ -274,7 +278,7 @@ int KMFilterMgr::process( KMMessage * msg, FilterSet set,
     if ( atLeastOneRuleMatched )
         endFiltering( msg );
     else
-        MessageProperty::setFiltering( msg, false );
+        MessageProperty::setFiltering( msg->getMsgSerNum(), false );
     if (folder) {
         tempOpenFolder( folder );
         folder->moveMsg(msg);

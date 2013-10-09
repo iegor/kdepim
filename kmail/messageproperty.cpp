@@ -1,5 +1,5 @@
 /*  Message Property
-    
+
     This file is part of KMail, the KDE mail client.
     Copyright (c) Don Sanders <sanders@kde.org>
 
@@ -52,16 +52,6 @@ void MessageProperty::setFiltering( Q_UINT32 serNum, bool filter )
     sFolders.replace(serNum, QGuardedPtr<KMFolder>(0) );
   else if (!filter)
     sFolders.remove(serNum);
-}
-
-// bool MessageProperty::filtering( const KMMsgBase *msgBase )
-// {
-//   return filtering( msgBase->getMsgSerNum() );
-// }
-
-void MessageProperty::setFiltering( const KMMsgBase *msgBase, bool filter )
-{
-	MessageProperty::setFiltering( msgBase->getMsgSerNum(), filter );
 }
 
 KMFolder* MessageProperty::filterFolder( Q_UINT32 serNum )
