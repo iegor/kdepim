@@ -1,0 +1,16 @@
+autom4te.cache/
+dbg_x86_64-pc-linux-gnu/
+*.Plo
+*Makefile.in
+*Makefile
+*.la.cpp
+*_dummy.cpp
+*.la.cc
+*_dummy.cc
+*~
+*.pcs
+html/
+latex/
+xml/
+*.tag
+tags
