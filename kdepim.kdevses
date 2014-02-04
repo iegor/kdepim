@@ -1,10 +1,25 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
 <!DOCTYPE KDevPrjSession>
 <KDevPrjSession>
- <DocsAndViews NumberOfDocuments="1" >
-  <Doc0 NumberOfViews="1" URL="file:///usr/qt/3/include/qptrlist.h" >
+ <DocsAndViews NumberOfDocuments="6" >
+  <Doc0 NumberOfViews="1" URL="file:///home/rainman/projects/kde/kdepim/kmail/kmfiltermgr.cpp" >
    <View0 Encoding="" Type="Source" />
   </Doc0>
+  <Doc1 NumberOfViews="1" URL="file:///home/rainman/projects/kde/kdepim/indexlib/memvector.tcc" >
+   <View0 Encoding="" Type="Source" />
+  </Doc1>
+  <Doc2 NumberOfViews="1" URL="file:///home/rainman/projects/kde/kdepim/indexlib/compressed.cpp" >
+   <View0 Encoding="" Type="Source" />
+  </Doc2>
+  <Doc3 NumberOfViews="1" URL="file:///home/rainman/projects/kde/kdepim/kmail/messageproperty.h" >
+   <View0 Encoding="" Type="Source" />
+  </Doc3>
+  <Doc4 NumberOfViews="1" URL="file:///home/rainman/projects/kde/kdepim/kmail/actionscheduler.cpp" >
+   <View0 Encoding="" Type="Source" />
+  </Doc4>
+  <Doc5 NumberOfViews="1" URL="file:///home/rainman/projects/kde/kdepim/kmail/messageproperty.cpp" >
+   <View0 Encoding="" line="0" Type="Source" />
+  </Doc5>
  </DocsAndViews>
  <pluginList>
   <kdevdebugger>
@@ -18,18 +33,6 @@
     <breakpoint2 location="/home/rainman/projects/kde/kdepim/kmail/kmheaders.cpp:1269" type="1" tracingFormatString="" traceFormatStringEnabled="0" condition="" tracingEnabled="0" enabled="1" >
      <tracedExpressions/>
     </breakpoint2>
-    <breakpoint3 location="/home/rainman/projects/kde/kdepim/kmail/kmfiltermgr.cpp:278" type="1" tracingFormatString="" traceFormatStringEnabled="0" condition="" tracingEnabled="0" enabled="1" >
-     <tracedExpressions/>
-    </breakpoint3>
-    <breakpoint4 location="/home/rainman/projects/kde/kdepim/kmail/kmfiltermgr.cpp:142" type="1" tracingFormatString="" traceFormatStringEnabled="0" condition="" tracingEnabled="0" enabled="1" >
-     <tracedExpressions/>
-    </breakpoint4>
-    <breakpoint5 location="/home/rainman/projects/kde/kdepim/kmail/messageproperty.cpp:48" type="1" tracingFormatString="" traceFormatStringEnabled="0" condition="" tracingEnabled="0" enabled="1" >
-     <tracedExpressions/>
-    </breakpoint5>
-    <breakpoint6 location="/home/rainman/projects/kde/kdepim/kmail/messageproperty.cpp:64" type="1" tracingFormatString="" traceFormatStringEnabled="0" condition="" tracingEnabled="0" enabled="1" >
-     <tracedExpressions/>
-    </breakpoint6>
    </breakpointList>
    <showInternalCommands value="0" />
   </kdevdebugger>
