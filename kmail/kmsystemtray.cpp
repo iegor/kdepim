@@ -16,6 +16,8 @@
  *                                                                         *
  ***************************************************************************/
 
+// kate: space-indent on; tab-width 2; indent-width 2; indent-mode cstyle; encoding UTF-8;
+
 #include <config.h>
 
 #include "kmsystemtray.h"
