@@ -3535,10 +3535,12 @@ QValueList< Q_UINT32 > KMHeaders::selectedSernums()
 {
   QValueList<Q_UINT32> list;
   for ( QListViewItemIterator it(this); it.current(); it++ ) {
-    if ( it.current()->isSelected() && it.current()->isVisible() ) {
-      HeaderItem* item = static_cast<HeaderItem*>( it.current() );
-      KMMsgBase *msgBase = mFolder->getMsgBase( item->msgId() );
-      list.append( msgBase->getMsgSerNum() );
+    if(it.current()) {
+      if ( it.current()->isSelected() && it.current()->isVisible() ) {
+        HeaderItem* item = static_cast<HeaderItem*>( it.current() );
+        KMMsgBase *msgBase = mFolder->getMsgBase( item->msgId() );
+        list.append( msgBase->getMsgSerNum() );
+      }
     }
   }
   return list;
