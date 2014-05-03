@@ -476,9 +476,9 @@ void KMSystemTray::updateNewMessages()
   /** The number of unread messages in that folder */
   int unread = fldr->countUnread();
 
-  QMap<QGuardedPtr<KMFolder>, int>::Iterator it =
+  QMap<QGuardedPtr<KMFolder>, int>::Iterator fld_it =
       mFoldersWithUnread.find(fldr);
-  bool unmapped = (it == mFoldersWithUnread.end());
+  bool unmapped = (fld_it == mFoldersWithUnread.end());
 
   /** If the folder is not mapped yet, increment count by numUnread
       in folder */
@@ -487,7 +487,7 @@ void KMSystemTray::updateNewMessages()
    * our last known version, and adjust mCount with that difference */
   else
   {
-    int diff = unread - it.data();
+    int diff = unread - fld_it.data();
     mCount += diff;
   }
 
