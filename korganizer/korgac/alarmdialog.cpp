@@ -311,9 +311,9 @@ void AlarmDialog::eventNotification() {
     found = true;
     item->mNotified = true;
     Alarm::List alarms = item->mIncidence->alarms();
-    Alarm::List::ConstIterator it;
-    for(it = alarms.begin(); it != alarms.end(); ++it) {
-      Alarm *alarm = *it;
+    Alarm::List::ConstIterator it_alarm;
+    for(it_alarm = alarms.begin(); it_alarm != alarms.end(); ++it_alarm) {
+      Alarm *alarm = (*it_alarm);
       // FIXME: Check whether this should be done for all multiple alarms
       if(alarm->type() == Alarm::Procedure) {
         // FIXME: Add a message box asking whether the procedure should really be executed
